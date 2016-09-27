@@ -1,0 +1,58 @@
+﻿https://github.com/jliberma/rugby7s/blob/master/data/ws72014_possession_stats.csv
+
+
+This data set is contains statistics on rugby 7s possessions throughout several tournaments in 2014/2015.
+
+FORMAT: .csv
+
+
+
+Attributes
+	
+•	SERIES MATCH - every match has a unique series match number 
+	
+•	EVENT - this is the abbreviation for the event
+	
+•	MATCH - this is the number of the match within an event
+	
+•	ROUND - this is the round the match takes place in. (pool, bowl, cup,…)
+	
+•	HALF- tells what half the possession was in
+	
+•	POSS - this is the possession number
+	
+•	TEAM - this is the first team
+	
+•	OPP - second team (opponent)
+	
+•	SOURCE - how the ball was attained 
+	
+•	START - the field is sectioned into 15 parts. This is where the ball was attained.
+	
+•	END - this is where the ball was lost
+	
+•	LOST - this is how the ball was lost
+
+
+
+http://www.flashscore.com.au/rugby/world/seven-s-world-series-australia/
+
+The previous data set did not contain the results of the matches so we pulled that data from this site.
+
+Format: .csv
+
+
+
+Attributes
+	
+•	DATE - date of the match
+	
+•	TIME - time of the match
+	
+•	TEAM 1 - first team
+	
+•	TEAM 2 - second team 
+	
+•	SCORE 1 - score of fist team
+	
+•	SCORE 2 - score of second team
