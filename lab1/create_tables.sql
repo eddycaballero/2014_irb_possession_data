@@ -1,15 +1,10 @@
 
-DROP TABLE Team_Tournament;
-DROP Table Possession; 
-DROP TABLE Game; 
-DROP TABLE Team;
-DROP TABLE Tournament;
-/*
-DROP DATABASE irb2014;*/
 DROP DATABASE if exists irb2014; 
 
 
 CREATE DATABASE irb2014;
+use urb2014;
+
 
 CREATE TABLE Tournament
 (
