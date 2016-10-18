@@ -7,7 +7,7 @@ from rollback_Game import *
 from import_Game import *
 from rollback_Possession import *
 from import_Possession import *
-'''
+
 from rollback_Team_Tournament import *
 from import_Team_Tournament import *
 
@@ -20,7 +20,6 @@ if is_success is True:
 else:
     print "rollback_Team_Tournament: failed"
 
-'''
 
 # rollback Possession table
 is_success = rollback_Possession()
@@ -87,7 +86,7 @@ if is_success is True:
     print "import_Possession: successful"
 else:
     print "import_Possession: failed"
-'''
+
 # populate Team_Tournament table
 is_success = import_Team_Tournament()
 
@@ -95,4 +94,3 @@ if is_success is True:
     print "import_Team_Tournament: successful"
 else:
     print "import_Team_Tournament: failed"
-'''
