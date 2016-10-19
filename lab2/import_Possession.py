@@ -41,10 +41,9 @@ def import_Possession():
 				cursor.execute("SELECT Team_ID FROM Team WHERE Team_Name ='" + team_dictionary[str(line[4].strip())] + "'")
 				Team_ID = cursor.fetchone()[0]
 				
-				cursor.execute("SELECT Game_ID FROM Game WHERE T_Game_Number = '" + line[2].strip() + "'  and  T_ID = '" + str(t_dictionary[str(line[1].strip())]) + "' ")
-				
-
+				cursor.execute("SELECT Game_ID FROM Game WHERE T_Game_Number = '" + line[2].strip() + "'  and  T_ID = '" + str(t_dictionary[str(line[1].strip())]) + "'")
 				Game_ID = cursor.fetchone()[0]
+				
 				
 
 
@@ -54,39 +53,8 @@ def import_Possession():
 				if insert_status is False:
 					is_success = False
 					return is_success
-		do_commit(connection)
+			do_commit(connection)
 	except pymysql.Error as e:
 		is_success = False
 		print "import_Possession Error: " + e.strerror
 	return is_success
-
-				
-				
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

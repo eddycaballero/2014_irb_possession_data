@@ -17,6 +17,7 @@ def import_Team():
 		csvfile = open("Team_ID.csv", "rb")
 		reader = csv.reader(csvfile)
 		count = 0
+		
 		for line in reader:
 			if count == 0:
 				count += 1
@@ -25,7 +26,7 @@ def import_Team():
 				insert_stmt = insert_prefix
 				insert_stmt += "'" + line[0] + "', '" + line[1] + "'" + (')')
 				
-
+			
 
 			insert_status = run_insert(cursor, insert_stmt)
 			if insert_status is False:

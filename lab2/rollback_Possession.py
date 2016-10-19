@@ -21,7 +21,7 @@ def rollback_Possession():
             is_success = False
 
     except pymysql.Error as e:
-        print "rollback_Instructor error: " + e.strerror
+        print "rollback_Possession error: " + e.strerror
 
 
 
