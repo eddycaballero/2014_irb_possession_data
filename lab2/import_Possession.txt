@@ -1,7 +1,0 @@
-Run Time: 6.7
-Records: 6894
-Errors: This import works when the database is clear but when you try to populate the database again we get an error for this import.
-
-		File "/Users/eduardocaballero/Desktop/lab2/import_Possession.py", line 47, in import_Possession
-    	Game_ID = cursor.fetchone()[0]
-	TypeError: 'NoneType' object has no attribute '__getitem__'
