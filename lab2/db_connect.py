@@ -11,6 +11,14 @@ def create_connection():
 		print "connection error: ", error
 
 	return connection
+def run_stmt(cursor, sql_stmt):	
+	is_success = True
+	try:
+		cursor.execute(sql_stmt)  
+	except pymysql.Error as error:
+		print "execute error: ", error
+		is_success = False
+	return is_success
 
 
 def run_insert(cursor, insert_stmt):	
